@@ -1,10 +1,1 @@
-stages:
-  - security-check
 
-dependency-check:
-  stage: security-check
-  script:
-    - dependency-check.bat --project "MyProject" --scan . --out dependency-check-report
-  artifacts:
-    paths:
-      - dependency-check-report/
